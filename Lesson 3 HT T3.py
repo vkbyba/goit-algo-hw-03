@@ -9,7 +9,7 @@ def sanitized_numbers(nums):
     sanitized = []
     for num in nums:
         clean_number = re.sub(r'\D', '',num)
-        formatted_number = f"+38{clean_number[-9:]}"
+        formatted_number = f"+38{clean_number[-10:]}"
         sanitized.append(formatted_number)
     return sanitized
 sanitized_list = sanitized_numbers(phone_numbers)
